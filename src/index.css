@@ -1,0 +1,307 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  --primary-color: #A34A28;        /* Warm Terracotta */
+  --accent-color: #6C4A84;         /* Tamarind Plum */
+  --hover-accent: #4E3261;         /* Deep Eggplant */
+  --light-bg: #FAF3EB;             /* Coconut Cream */
+  --text-color: #2E2E2E;           /* Charcoal */
+  --menu-button-bg: #FAF3EB;
+  --menu-hover-bg: #A34A28;
+  --menu-hover-text: #ffffff;
+  --hamburger-bg: #fbe8d3;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+body, html {
+  height: 100dvh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  place-items: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: blanchedalmond;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+button:hover {
+  /* background-color: #535bf2;
+  color: #ffffff;
+  border-color: #535bf2; */
+  /* animation: button-hover 0.25s forwards; */
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #f9f9f9;
+  color: #888;
+  /* border-color: #646cff; */
+
+}
+button:focus,
+button:focus-visible {
+  /* outline: 4px auto -webkit-focus-ring-color; */
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: var(--primary-color);
+  color: whitesmoke;
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow: hidden;
+}
+
+.navbar button {
+  height: 60px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+  gap: 10%;
+  background-color: transparent;
+
+  &:hover {
+    animation: button-hover 0.25s forwards;
+  }
+  &:focus {
+    outline: none;
+    /* background-color: #535bf2; */
+
+  }
+  &:focus > span {
+    background-color: gainsboro;
+
+  }
+}
+.navbar > button.active > span{
+  background-color: rgb(216, 202, 176);
+  color: white;
+  border-radius: 12px;
+  animation: button-hover 0.25s forwards;
+}
+@keyframes button-hover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+    /* transform-origin: right; */
+    
+  }
+}
+.navbar > button > span {
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* cursor: pointer; */
+  position: absolute;
+  right: -100%; /* Ensure it starts outside of the screen */
+  height: calc(100svh - 60px);
+  width: 100%;
+  background-color: var(--hamburger-bg);
+  animation: hamburger-slide-out 0.25s forwards;
+  z-index: 1000; /* Ensure it stays above other elements */
+  /* border-radius: 12px; */
+}
+.hamburger.active {
+  animation: hamburger-slide-in 0.25s forwards; /* Slide in animation */
+  width: 100%;
+}
+.hamburger.out {
+  animation: hamburger-slide-out 0.25s forwards;
+  width: 100%;
+}
+.hamburger__option {
+  height: 60px;
+  width: 90%;
+  margin-top: 10px;
+  background-color: var(--menu-button-bg);
+  cursor: pointer;
+  color: var(--text-color);
+  border-radius: 36px;
+  align-content: center;
+  text-align: left;
+  text-indent: 36px;
+  /* color: white; */
+
+  &:hover {
+    animation: hamburger-option-hover 0.25s forwards;
+    /* color: white;
+    transition: color 0.25s;
+     */ 
+    background-color: var(--menu-hover-bg);
+    color: var(--menu-hover-text);
+    transform: scale(1.05);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+}
+
+@keyframes hamburger-slide-in {
+  0% {
+    right: -100%; /* Start outside of the screen */
+  }
+  100% {
+    right: 0; /* End at the visible position */
+    width: 100%;
+  }
+}
+@keyframes hamburger-slide-out {
+  0% {
+    right: 0;
+    width: 100%;
+  }
+  100% {
+    right: -100%;
+    width: 0;
+  }
+}
+@keyframes hamburger-option-hover {
+  0% {
+    transform: scale(1);
+    
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: var(--menu-hover-bg);
+    color: white;
+  }
+  100% {
+    transform: scale(1);
+    background-color: var(--menu-button-bg);
+    color: var(--text-color);
+  }
+}
+.hamburger_userspace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 30px;
+  height: 120px;
+  border-radius: 24px;
+  width: 90%;
+  background-color: var(--primary-color);
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+@media (min-width: 780px) {
+  .hamburger {
+    /* border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px; */
+    /* width: 30%; */
+    height: calc(100dvh - 80px);
+    margin: 10px;
+    margin-left: 0;
+    border-radius: 12px;
+  }
+  @keyframes hamburger-slide-in {
+    0% {
+      right: -100%; /* Start outside of the screen */
+      width: 0;
+    }
+    100% {
+      right: 0; /* End at the visible position */
+      width: 30%;
+    }
+  }
+  @keyframes hamburger-slide-out {
+    0% {
+      right: 0;
+      width: 30%;
+    }
+    100% {
+      right: -100%; /* End outside of the screen */
+      width: 0;
+    }
+  }
+  @keyframes hamburger-option-hover {
+    0% {
+      transform: scale(1);
+      
+    }
+    50% {
+      /* transform: scale(1.05);
+      background-color: #213547;
+      color: white; */
+    }
+    100% {
+      /* transform: scale(1);
+      background-color: beige;
+      color: black; */
+      transform: scale(1.05);
+      background-color: var(--menu-hover-bg);
+      color: white;
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
