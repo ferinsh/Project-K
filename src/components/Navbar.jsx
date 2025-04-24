@@ -2,10 +2,13 @@ import NavbarUser from "./NavbarUser";
 import './Navbar.css'
 
 import {useState} from "react"
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const [menuVisible, setMenuVisible] = useState(false);
     const [isAnimatingOut, setIsAnimatingOut] = useState(false);
+
+    let navigate = useNavigate()
 
     let hamburgerOptions  = [
         {id: 1, name: "Home", link: "/home"},
@@ -39,6 +42,12 @@ const Navbar = () => {
 
     }
 
+    const handleOptionClick = (e) => {
+        const link = hamburgerOptions[parseInt(e.target.id) - 1]['link']
+        // console.log(link)
+        navigate(link)
+    }
+
     return (
         <>
             <nav className="navbar">
@@ -54,7 +63,7 @@ const Navbar = () => {
             <section className={hamburgerClassName}>
             {menuVisible && hamburgerOptions.map((option) => {
                 return (
-                    <div key={option.id} className="hamburger__option">
+                    <div key={option.id} id={option.id} className="hamburger__option" onClick={handleOptionClick}>
                         {option.name}
                     </div>
                 )

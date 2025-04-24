@@ -19,9 +19,11 @@
   --light-bg: #FAF3EB;             /* Coconut Cream */
   --text-color: #2E2E2E;           /* Charcoal */
   --menu-button-bg: #FAF3EB;
-  --menu-hover-bg: #A34A28;
+  --menu-hover-bg: #374258;
   --menu-hover-text: #ffffff;
   --hamburger-bg: #fbe8d3;
+  --juniper: #618180;
+  --oxford-blue: #374258;
 }
 
 a {
