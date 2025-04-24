@@ -53,12 +53,11 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 .landingpage_hero {
-  height: 200px;
-  width: 95%;
-  background-color: var(--primary-color);
-  border-radius: 36px;
+  height: 300px;
+  width: 100%;
+  background-color: var(--light-bg);
 }

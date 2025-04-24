@@ -1,0 +1,210 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+  }
+  
+  .navbar button {
+    height: 60px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    gap: 10%;
+    background-color: transparent;
+  
+    &:hover {
+      animation: button-hover 0.25s forwards;
+    }
+    &:focus {
+      outline: none;
+      /* background-color: #535bf2; */
+  
+    }
+    &:focus > span {
+      background-color: gainsboro;
+  
+    }
+  }
+  .navbar > button.active > span{
+    background-color: rgb(216, 202, 176);
+    color: white;
+    border-radius: 12px;
+    animation: button-hover 0.25s forwards;
+  }
+  @keyframes button-hover {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+      /* transform-origin: right; */
+      
+    }
+  }
+  .navbar > button > span {
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* cursor: pointer; */
+    position: absolute;
+    right: -100%; /* Ensure it starts outside of the screen */
+    height: calc(100svh - 60px);
+    width: 100%;
+    background-color: var(--hamburger-bg);
+    animation: hamburger-slide-out 0.25s forwards;
+    z-index: 1000; /* Ensure it stays above other elements */
+    /* border-radius: 12px; */
+  }
+  .hamburger.active {
+    animation: hamburger-slide-in 0.25s forwards; /* Slide in animation */
+    width: 100%;
+  }
+  .hamburger.out {
+    animation: hamburger-slide-out 0.25s forwards;
+    width: 100%;
+  }
+  .hamburger__option {
+    height: 60px;
+    width: 90%;
+    margin-top: 10px;
+    background-color: var(--menu-button-bg);
+    cursor: pointer;
+    color: var(--text-color);
+    border-radius: 36px;
+    align-content: center;
+    text-align: left;
+    text-indent: 36px;
+    /* color: white; */
+  
+    &:hover {
+      animation: hamburger-option-hover 0.25s forwards;
+      /* color: white;
+      transition: color 0.25s;
+       */ 
+      background-color: var(--menu-hover-bg);
+      color: var(--menu-hover-text);
+      transform: scale(1.05);
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+  }
+  
+  @keyframes hamburger-slide-in {
+    0% {
+      right: -100%; /* Start outside of the screen */
+    }
+    100% {
+      right: 0; /* End at the visible position */
+      width: 100%;
+    }
+  }
+  @keyframes hamburger-slide-out {
+    0% {
+      right: 0;
+      width: 100%;
+    }
+    100% {
+      right: -100%;
+      width: 0;
+    }
+  }
+  @keyframes hamburger-option-hover {
+    0% {
+      transform: scale(1);
+      
+    }
+    50% {
+      transform: scale(1.05);
+      background-color: var(--menu-hover-bg);
+      color: white;
+    }
+    100% {
+      transform: scale(1);
+      background-color: var(--menu-button-bg);
+      color: var(--text-color);
+    }
+  }
+  .hamburger_userspace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    height: 120px;
+    color: white;
+    border-radius: 24px;
+    width: 90%;
+    background-color: var(--primary-color);
+    z-index: 1000; /* Ensure it stays above other elements */
+  }
+  @media (min-width: 780px) {
+    .hamburger {
+      /* border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px; */
+      /* width: 30%; */
+      height: calc(100dvh - 80px);
+      margin: 10px;
+      margin-left: 0;
+      border-radius: 12px;
+    }
+    @keyframes hamburger-slide-in {
+      0% {
+        right: -100%; /* Start outside of the screen */
+        width: 0;
+      }
+      100% {
+        right: 0; /* End at the visible position */
+        width: 30%;
+      }
+    }
+    @keyframes hamburger-slide-out {
+      0% {
+        right: 0;
+        width: 30%;
+      }
+      100% {
+        right: -100%; /* End outside of the screen */
+        width: 0;
+      }
+    }
+    @keyframes hamburger-option-hover {
+      0% {
+        transform: scale(1);
+        
+      }
+      50% {
+        /* transform: scale(1.05);
+        background-color: #213547;
+        color: white; */
+      }
+      100% {
+        /* transform: scale(1);
+        background-color: beige;
+        color: black; */
+        transform: scale(1.05);
+        background-color: var(--menu-hover-bg);
+        color: white;
+      }
+    }
+  }

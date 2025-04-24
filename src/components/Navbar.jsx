@@ -1,3 +1,5 @@
+import NavbarUser from "./NavbarUser";
+import './Navbar.css'
 
 import {useState} from "react"
 
@@ -57,7 +59,7 @@ const Navbar = () => {
                     </div>
                 )
             })}
-            {menuVisible && <div className="hamburger_userspace">X</div>}
+            {menuVisible && <NavbarUser />}
 
             </section>
             
