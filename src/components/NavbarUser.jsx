@@ -1,5 +1,5 @@
 import { useState } from "react"
-import loginlogo from '/public/icons/reshot-icon-user-login-D4UHRM9E5G.svg'
+import loginlogo from '/icons/reshot-icon-user-login-D4UHRM9E5G.svg'
 import { useNavigate } from "react-router-dom";
 
 const NavbarUser = () => {

@@ -13,8 +13,8 @@
   }
   
   .navbar button {
-    height: 60px;
-    width: 40px;
+    height: 30px;
+    width: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,5 +241,8 @@
         background-color: var(--menu-hover-bg);
         color: white;
       }
+    }
+    .logintext_holder > h2 {
+        
     }
   }
