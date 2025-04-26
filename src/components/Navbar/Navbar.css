@@ -93,13 +93,9 @@
     align-content: center;
     text-align: left;
     text-indent: 36px;
-    /* color: white; */
   
     &:hover {
       animation: hamburger-option-hover 0.25s forwards;
-      /* color: white;
-      transition: color 0.25s;
-       */ 
       background-color: var(--menu-hover-bg);
       color: var(--menu-hover-text);
       transform: scale(1.05);
