@@ -1,7 +1,7 @@
-import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar.jsx'
-import LandingPageContent from './components/LandingPageContent/LandingPageContent.jsx'
+import LandingPageContent from './components/LandingPageComponents/LandingPageContent.jsx'
+import LPHero from './components/LandingPageComponents/LPHero.jsx'
 
 function LandingPage() {
   
@@ -9,11 +9,8 @@ function LandingPage() {
   return (
     <>
       <Navbar />
-      <section className="landingpage_hero">
-
-      </section>
+      <LPHero />
       <LandingPageContent />
-      
     </>
   )
 }

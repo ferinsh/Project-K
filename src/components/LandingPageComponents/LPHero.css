@@ -1,0 +1,19 @@
+.landingpage_hero {
+    height: 180px;
+    width: 100%;
+    background-color: var(--cloud);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+ 
+.hero_image_holder {
+    background-position: center;
+    background-size: cover;
+}
+
+@media(min-width: 780px) {
+    .landingpage_hero {
+        height: 360px;
+    }
+}
