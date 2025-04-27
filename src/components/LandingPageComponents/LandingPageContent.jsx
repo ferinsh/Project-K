@@ -20,7 +20,7 @@ const LPContent = () => {
             <div className="lc_categories"></div>
             <div className="lc_categories_search">
               <form className="lc_cat_form" onSubmit={handleCatFormSubmit}>
-                <label htmlFor="category_name">Search for a category</label>
+                <label htmlFor="category_name"><b>Find Category</b></label>
                 <input type="text" name="category_name" id="category_name_search_input"/>
               </form>
               <section className="lc_cat_search_results"></section>
