@@ -1,0 +1,243 @@
+[
+    {
+      "name": "All Recipes",
+      "url": "/recipes/all",
+      "image": "/images/all_recipes.jpg"
+    },
+    {
+      "name": "Ramadan Special",
+      "url": "/recipes/ramadan-special",
+      "image": "/images/ramadan_special.jpg"
+    },
+    {
+      "name": "Iftar Specials",
+      "url": "/recipes/iftar-specials",
+      "image": "/images/iftar_specials.jpg"
+    },
+    {
+      "name": "Christmas Specials",
+      "url": "/recipes/christmas-specials",
+      "image": "/images/christmas_specials.jpg"
+    },
+    {
+      "name": "Onam Specials",
+      "url": "/recipes/onam-specials",
+      "image": "/images/onam_specials.jpg"
+    },
+    {
+      "name": "Pickles",
+      "url": "/recipes/pickles",
+      "image": "/images/pickles.jpg"
+    },
+    {
+      "name": "Curries",
+      "url": "/recipes/curries",
+      "image": "/images/curries.jpg"
+    },
+    {
+      "name": "Fish Curries",
+      "url": "/recipes/fish-curries",
+      "image": "/images/fish_curries.jpg"
+    },
+    {
+      "name": "Chicken Curries",
+      "url": "/recipes/chicken-curries",
+      "image": "/images/chicken_curries.jpg"
+    },
+    {
+      "name": "Dal Recipes",
+      "url": "/recipes/dal",
+      "image": "/images/dal_recipes.jpg"
+    },
+    {
+      "name": "Hot Drinks",
+      "url": "/recipes/hot-drinks",
+      "image": "/images/hot_drinks.jpg"
+    },
+    {
+      "name": "Refreshing Drinks",
+      "url": "/recipes/refreshing-drinks",
+      "image": "/images/refreshing_drinks.jpg"
+    },
+    {
+      "name": "Payasam",
+      "url": "/recipes/payasam",
+      "image": "/images/payasam.jpg"
+    },
+    {
+      "name": "Mandi",
+      "url": "/recipes/mandi",
+      "image": "/images/mandi.jpg"
+    },
+    {
+      "name": "Biryani",
+      "url": "/recipes/biryani",
+      "image": "/images/biryani.jpg"
+    },
+    {
+      "name": "Rice",
+      "url": "/recipes/rice",
+      "image": "/images/rice.jpg"
+    },
+    {
+      "name": "Mutton",
+      "url": "/recipes/mutton",
+      "image": "/images/mutton.jpg"
+    },
+    {
+      "name": "Prawns",
+      "url": "/recipes/prawns",
+      "image": "/images/prawns.jpg"
+    },
+    {
+      "name": "Beef",
+      "url": "/recipes/beef",
+      "image": "/images/beef.jpg"
+    },
+    {
+      "name": "Egg",
+      "url": "/recipes/egg",
+      "image": "/images/egg.jpg"
+    },
+    {
+      "name": "Summer Recipes",
+      "url": "/recipes/summer",
+      "image": "/images/summer_recipes.jpg"
+    },
+    {
+      "name": "Easy Breakfast",
+      "url": "/recipes/easy-breakfast",
+      "image": "/images/easy_breakfast.jpg"
+    },
+    {
+      "name": "Dinner Recipes",
+      "url": "/recipes/dinner",
+      "image": "/images/dinner_recipes.jpg"
+    },
+    {
+      "name": "Arabian Snacks",
+      "url": "/recipes/arabian-snacks",
+      "image": "/images/arabian_snacks.jpg"
+    },
+    {
+      "name": "Evening Snacks",
+      "url": "/recipes/evening-snacks",
+      "image": "/images/evening_snacks.jpg"
+    },
+    {
+      "name": "Long Lasting",
+      "url": "/recipes/long-lasting",
+      "image": "/images/long_lasting.jpg"
+    },
+    {
+      "name": "Keto",
+      "url": "/recipes/keto",
+      "image": "/images/keto.jpg"
+    },
+    {
+      "name": "Bread",
+      "url": "/recipes/bread",
+      "image": "/images/bread.jpg"
+    },
+    {
+      "name": "Pizza",
+      "url": "/recipes/pizza",
+      "image": "/images/pizza.jpg"
+    },
+    {
+      "name": "Indian Recipes",
+      "url": "/recipes/indian",
+      "image": "/images/indian_recipes.jpg"
+    },
+    {
+      "name": "North Indian Recipes",
+      "url": "/recipes/north-indian",
+      "image": "/images/north_indian_recipes.jpg"
+    },
+    {
+      "name": "Kerala Recipes",
+      "url": "/recipes/kerala",
+      "image": "/images/kerala_recipes.jpg"
+    },
+    {
+      "name": "Kannur Recipes",
+      "url": "/recipes/kannur",
+      "image": "/images/kannur_recipes.jpg"
+    },
+    {
+      "name": "Chinese Recipes",
+      "url": "/recipes/chinese",
+      "image": "/images/chinese_recipes.jpg"
+    },
+    {
+      "name": "Italian Recipes",
+      "url": "/recipes/italian",
+      "image": "/images/italian_recipes.jpg"
+    },
+    {
+      "name": "Puddings",
+      "url": "/recipes/puddings",
+      "image": "/images/puddings.jpg"
+    },
+    {
+      "name": "Salads",
+      "url": "/recipes/salads",
+      "image": "/images/salads.jpg"
+    },
+    {
+      "name": "Vegan Recipes",
+      "url": "/recipes/vegan",
+      "image": "/images/vegan_recipes.jpg"
+    },
+    {
+      "name": "Non Veg Recipes",
+      "url": "/recipes/non-veg",
+      "image": "/images/non_veg_recipes.jpg"
+    },
+    {
+      "name": "Veg Recipes",
+      "url": "/recipes/veg",
+      "image": "/images/veg_recipes.jpg"
+    },
+    {
+      "name": "Sandwiches",
+      "url": "/recipes/sandwiches",
+      "image": "/images/sandwiches.jpg"
+    },
+    {
+      "name": "Ice Creams",
+      "url": "/recipes/ice-creams",
+      "image": "/images/ice_creams.jpg"
+    },
+    {
+      "name": "Cakes",
+      "url": "/recipes/cakes",
+      "image": "/images/cakes.jpg"
+    },
+    {
+      "name": "Lunch Box Recipes",
+      "url": "/recipes/lunch-box",
+      "image": "/images/lunch_box_recipes.jpg"
+    },
+    {
+      "name": "Healthy Recipes",
+      "url": "/recipes/healthy",
+      "image": "/images/healthy_recipes.jpg"
+    },
+    {
+      "name": "Snacks",
+      "url": "/recipes/snacks",
+      "image": "/images/snacks.jpg"
+    },
+    {
+      "name": "Sweets",
+      "url": "/recipes/sweets",
+      "image": "/images/sweets.jpg"
+    },
+    {
+      "name": "Desserts",
+      "url": "/recipes/desserts",
+      "image": "/images/desserts.jpg"
+    }
+  ]
+  
