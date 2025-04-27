@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './LandingPageStyle.css'
+import './LandingPageContentStyle.css'
 
 const LPContent = () => {
     const [contentExpanded, setContentExpanded] = useState(false)
